@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" xmlns="http://www.w3.org/1999/xhtml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header class="navWrapper">
+      <div class="navIcons">
+        <a href="#">
+          <img
+            src="https://i.imgur.com/XPPoUNR.png"
+            class="logoImage"
+            alt="Nintendo Logo"/>
+          </a>
+        <button type="button" class="hamburgerIcon">
+          <span class="hamburgerBun"></span>
+        </button>
+      </div>
+      <nav class="navMenu">
+        <ul class="navMenuList">
+          <li>
+            <a class="navLink" href="#productDescription"
+              >Product Description</a>
+          </li>
+          <li><a class="navLink" href="#deliveryDetails">Delivery</a></li>
+          <li><a class="navLink" href="#productReviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="videoWrapper">
+      <div class="iframeContainer">
+        <iframe
+          src="https://www.youtube.com/embed/f5uik5fgIaI?start=6"
+          class="nintendoAd"
+          width="560"
+          height="315"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <div class="nintendoSection">
+      <div class="nintendoImageWrapper">
+        <img src="https://imgur.com/DtwwuX1.jpg" alt="Nintendo Grey Console" />
+      </div>
+
+      <section class="productContent">
+        <div>
+          <h1 class="productTitle">Nintendo Switch - Grey</h1>
+          <p class="productPrice">
+            £149.99 <span class="productVAT">VAT included</span>
+          </p>
+          <p class="promotionalPrice">
+            25% off <span><s>£199.99</s></span>
+          </p>
+        </div>
+        <div class="stockAlertContainer">
+          <h4>Out of stock</h4>
+          <form class="userInput">
+            <label id="email-label" for="email"
+              >Notify me when back in stock</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="formControl"
+              placeholder="Enter your email address"
+              required
+            />
+            <input
+              id="submit"
+              type="submit"
+              value="Notify me"
+              class="formSubmit"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section class="banner">
+        <img
+          src="https://imgur.com/jmCHaTv.png"
+          alt="Nintendo Switch Console"/>
+        <h1>Nintendo Switch</h1>
+      </section>
+
+      <div class="productInformation">
+        <section id="productDescription">
+          <h2 class="productDescriptionHeading">Product Description</h2>
+          <p>Product code: 7652359</p>
+          <p>
+            Nintendo Switch is a breakthrough home video game console. For the
+            first time, players can enjoy a full home-console experience
+            anytime, anywhere. This model includes battery life of approximately
+            4.5 - 9 hours. The battery life will depend on the games you play.
+          </p>
+          <img src="https://imgur.com/zYS1RF5.jpg" alt="Switch Handheld" />
+        </section>
+
+        <section id="productReviews">
+          <h2 class="productReviewsHeading">Reviews</h2>
+          <p>There are no reviews for this product.</p>
+          <img src="https://imgur.com/9430Khy.jpg" />
+        </section>
+
+        <section id="deliveryDetails">
+          <h2 class="deliveryDetailsHeading">Delivery & Returns</h2>
+          <p class="deliveryOptions">Standard Delivery</p>
+          <p>
+            UK delivery within 5 days, 7.30am - 6pm, Monday to Saturday. FREE on
+            orders over £50, otherwise £3.50.
+          </p>
+          <p class="deliveryOptions">Next Day Delivery</p>
+          <p>
+            Order before 10.30pm, 7 days a week and subject to stock
+            availability, you will receive your order the next day. No
+            deliveries take place on a Bank Holiday. FREE when you spend over
+            £200.
+          </p>
+          <p class="deliveryOptions">International Delivery</p>
+          <p>We ship to 38 countries worldwide. Prices vary by location</p>
+        </section>
+      </div>
+    </div>
+    <div class="upArrow">
+      <a id="top" href=#>
+        🠹
+      </a>
+    </div>
+
+    <script>
+      const mainNav = document.querySelector(".navMenu");
+      const navBarToggle = document.querySelector(".hamburgerIcon");
+     
+      navBarToggle.addEventListener("click", function() {
+      mainNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
